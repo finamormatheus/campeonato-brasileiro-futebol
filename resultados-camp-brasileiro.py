@@ -7,7 +7,7 @@ filename = 'Resultados.csv'
 
 f = open(filename, 'w')
     
-header = 'ano, rodada, golMandante, golVisitante\n'
+header = 'ano,rodada,golMandante,golVisitante\n'
     
 f.write(header)
 
