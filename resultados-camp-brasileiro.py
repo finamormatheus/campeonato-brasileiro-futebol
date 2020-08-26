@@ -24,7 +24,7 @@ for year in years:
     
     rodada = 0
     
-    if year != "2019":
+    if year != "2019" and year != "2018":
         for i in range(0,len(resultados)):
             if year == '2014' and i == 299:
                 golMandante = 0
@@ -38,7 +38,7 @@ for year in years:
                 rodada += 1
         
             f.write(year + ',' + str(rodada) + ',' + str(golMandante) + ',' + str(golVisitante) + '\n')
-    elif year == "2019":
+    else:
         for i in range(20,len(resultados)):
             resultado = resultados[i].string
             golMandante = resultado[0]
